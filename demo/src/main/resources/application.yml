@@ -1,0 +1,20 @@
+server:
+  port: 8888
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/jianghu?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+#  data:
+#    elasticsearch:
+#      cluster-name: elasticsearch
+#      cluster-nodes: 47.108.144.173:9300
+mapper:
+  mappers: com.demo.demo.utils.BaseMapper
+  not-empty: false
+  identity: mysql
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: false
